@@ -23,11 +23,11 @@ texts = text_splitter.split_documents(data)
 #print(texts[0])
 
 #create OpenAI embeddings
-embeddings = OpenAIEmbeddings(openai_api_key="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")
+embeddings = OpenAIEmbeddings(openai_api_key="INSERT OPENAI KEY HERE")
 
 #initiate the pinecone
 pinecone.init(
-    api_key="9e7b6706-4c48-45e4-9b04-cf72b1780962",
+    api_key="INSERT PINECONE KEY HERE",
     environment="us-east-1-aws"
 )
 #ref pinecone index
@@ -37,7 +37,7 @@ index_name = "langchain1"
 docsearch = Pinecone.from_texts([t.page_content for t in texts], embeddings, index_name = index_name)
 
 #create the LLM
-llm = OpenAI(temperature=0, openai_api_key="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")
+llm = OpenAI(temperature=0, openai_api_key="INSERT OPENAI KEY HERE")
 chain = load_qa_chain(llm, chain_type="stuff")
 
 #Enter Query and find relevant docs to answer query

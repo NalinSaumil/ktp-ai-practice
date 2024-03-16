@@ -2,7 +2,7 @@ import openai
 from gtts import gTTS
 
 # Enter your OpenAI API key here
-openai.api_key = "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"
+openai.api_key = "INSERT OPENAI KEY HERE"
 
 def generate_story(title):
     # Prompt for GPT-3 model

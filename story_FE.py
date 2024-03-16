@@ -3,7 +3,7 @@ import openai
 from gtts import gTTS
 
 # Set OpenAI API key
-openai.api_key = "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"
+openai.api_key = "INSERT OPENAI KEY HERE"
 
 # Function to generate story and audio
 def generate_story_and_audio(title):

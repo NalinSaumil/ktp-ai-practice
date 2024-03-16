@@ -2,7 +2,7 @@ from llama_index import SimpleDirectoryReader, GPTSimpleVectorIndex, LLMPredicto
 from langchain import OpenAI
 import os
 
-os.environ['OPENAI_API_KEY']= "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" # add openai api key here
+os.environ['OPENAI_API_KEY']= "INSERT KEY HERE" # add openai api key here
 
 prompt_helper = PromptHelper(max_input_size=4096, num_output=256, max_chunk_overlap=20, chunk_size_limit=600)
 
